@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E85D9004-F913-4E3D-9E55-54236B84E4B5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp</RootNamespace>
+    <AssemblyName>ConsoleApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Problema04\BaseOperacion.cs" />
+    <Compile Include="Problema05\Repositorios\ArchivoRepository.cs" />
+    <Compile Include="Problema05\Interfaces\IArchivoRepository.cs" />
+    <Compile Include="Problema05\Interfaces\IUsuarioRepository.cs" />
+    <Compile Include="Problema06\Fakes\Body.cs" />
+    <Compile Include="Problema06\Fakes\Data.cs" />
+    <Compile Include="Problema06\Fakes\MyDrive.cs" />
+    <Compile Include="Problema06\Fakes\Profile.cs" />
+    <Compile Include="Problema06\Fakes\Response.cs" />
+    <Compile Include="Problema06\Fakes\Telemetry.cs" />
+    <Compile Include="Problema06\Problema06.cs" />
+    <Compile Include="Problema09\Fakes\Aplicacion.cs" />
+    <Compile Include="Problema09\Fakes\AplicacionDAO.cs" />
+    <Compile Include="Problema09\Fakes\DAOFactory.cs" />
+    <Compile Include="Problema09\Fakes\ParametroDAO.cs" />
+    <Compile Include="Problema09\Fakes\Servidor.cs" />
+    <Compile Include="Problema09\Fakes\ServidorDAO.cs" />
+    <Compile Include="Problema09\Problema09.cs" />
+    <Compile Include="Problema10\Fakes\Cancelacion.cs" />
+    <Compile Include="Problema10\Fakes\Emision.cs" />
+    <Compile Include="Problema10\Fakes\Endoso.cs" />
+    <Compile Include="Problema10\Fakes\Proceso.cs" />
+    <Compile Include="Problema10\Fakes\Renovacion.cs" />
+    <Compile Include="Problema10\Problema10.cs" />
+    <Compile Include="Problema02\Fakes\DAOFactory.cs" />
+    <Compile Include="Problema02\Fakes\DatosSiniestro.cs" />
+    <Compile Include="Problema02\Fakes\DatoSiniestroDAO.cs" />
+    <Compile Include="Problema02\Fakes\SiniestroDAO.cs" />
+    <Compile Include="Problema02\Problema02.cs" />
+    <Compile Include="Problema07\Fakes\Automovil.cs" />
+    <Compile Include="Problema07\Fakes\ConceptoCuota.cs" />
+    <Compile Include="Problema07\Fakes\ConceptoCuotaDAO.cs" />
+    <Compile Include="Problema07\Fakes\Cuota.cs" />
+    <Compile Include="Problema07\Fakes\DAOFactory.cs" />
+    <Compile Include="Problema07\Fakes\Seguro.cs" />
+    <Compile Include="Problema07\Fakes\TipoMovimientoList.cs" />
+    <Compile Include="Problema07\Problema07.cs" />
+    <Compile Include="Problema03\Fakes\DAOFactory.cs" />
+    <Compile Include="Problema03\Fakes\HashUtil.cs" />
+    <Compile Include="Problema03\Fakes\Usuario.cs" />
+    <Compile Include="Problema03\Fakes\UsuarioDAO.cs" />
+    <Compile Include="Problema03\Problema03.cs" />
+    <Compile Include="Problema05\Repositorios\UsuarioRepository.cs" />
+    <Compile Include="Problema05\Problema05.cs" />
+    <Compile Include="Problema05\Usuario.cs" />
+    <Compile Include="Problema08\Problema08.cs" />
+    <Compile Include="Problema08\Incrementador.cs" />
+    <Compile Include="Problema04\Problema04.cs" />
+    <Compile Include="Problema04\Operacion.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Link>README.md</Link>
+    </None>
+    <None Include="App.config" />
+    <None Include="Problema01\_README01.md" />
+    <None Include="Problema02\_README02.md" />
+    <None Include="Problema03\_README03.md" />
+    <None Include="Problema04\_README04.md" />
+    <None Include="Problema05\_README05.md" />
+    <None Include="Problema06\_README06.md" />
+    <None Include="Problema07\_README07.md" />
+    <None Include="Problema08\_README08.md" />
+    <None Include="Problema09\_README09.md" />
+    <None Include="Problema10\_README10.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
